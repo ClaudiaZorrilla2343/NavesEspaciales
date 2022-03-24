@@ -1,7 +1,5 @@
 package Package;
 
-
-//tripuladas
 public class mannedSnows extends Spaceships {
 
     private int passengers;//pasajeros
@@ -29,4 +27,7 @@ public class mannedSnows extends Spaceships {
         }
     }
 
+    public int getPassengers() {
+        return passengers;
+    }
 }

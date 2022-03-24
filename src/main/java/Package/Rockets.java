@@ -36,23 +36,70 @@ public class Rockets {
         veloEscape = Math.sqrt(veloEscape);
         return veloEscape;
     }
-//despegue
+    //despegue
     public void takeoff(){
         this.puissance += puissance;
     }
 
-    public void condition(){
+    public boolean condition(){
         if (puissance == 0){
-            System.out.println("La nave esta en tierra");
             this.takenOff = false;
         }else{
-            System.out.println("La nave esta fuera de tierra");
             this.takenOff = true;
         }
+        return takenOff;
     }
 
     public Boolean takenOff(){
         return takenOff;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPropellant() {
+        return propellant;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public int getPush() {
+        return push;
+    }
+
+    public boolean isSelfPropelled() {
+        return selfPropelled;
+    }
+
+    public String getUsefulLoad() {
+        return usefulLoad;
+    }
+
+    public int getFuel() {
+        return fuel;
+    }
+
+    public String getMotor() {
+        return motor;
+    }
+
+    public int getNumMotor() {
+        return numMotor;
+    }
+
+    public int getPuissance() {
+        return puissance;
+    }
+
+    public boolean isTakenOff() {
+        return takenOff;
+    }
+
+    public void setTakenOff(boolean takenOff) {
+        this.takenOff = takenOff;
     }
 
 

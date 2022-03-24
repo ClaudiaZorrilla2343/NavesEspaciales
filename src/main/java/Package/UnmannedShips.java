@@ -2,7 +2,6 @@ package Package;
 
 import java.util.HashMap;
 
-//NOtripuladas
 public class UnmannedShips extends Spaceships{
 
     private String celestialBodyToStudy;//cuerpo celeste para estudiar
@@ -13,15 +12,12 @@ public class UnmannedShips extends Spaceships{
         this.informationSatellites = informationSatellites;
     }
 
-
-
     @Override
     public void target() {
         System.out.println("Su objetivo es abastecer, limpiar y regular periódicamente la elevación \n"
                             +"de la Estación Espacial Internacional.\n"
                             + "Estudiar otros cuerpos celestes");
     }
-
 
     public void setInformationSatellites(String planet) {
 
@@ -39,7 +35,7 @@ public class UnmannedShips extends Spaceships{
 
         informationSatellites = String.valueOf(satellites.get(planet));
         this.informationSatellites = informationSatellites;
-        System.out.println("Este planeta tiene el siguiente numero de satelites: "+informationSatellites);
+        System.out.println("Este planeta tiene el siguiente número de satelites: "+informationSatellites);
 
     }
 
