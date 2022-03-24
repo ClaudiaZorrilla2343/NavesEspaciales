@@ -12,4 +12,6 @@ public class mannedSnows extends Spaceships {
     public void target() {
         System.out.println("Mandar seres humanos para tareas de reparación, matenimiento e investigación");
     }
+
+    
 }
