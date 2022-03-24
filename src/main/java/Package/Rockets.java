@@ -10,6 +10,8 @@ public class Rockets {
     private int fuel; //combustible
     private String motor;
     private int numMotor;
+    private int puissance;
+    private boolean takenOff;
 
 
     public Rockets(String usefulLoad) {
@@ -22,6 +24,8 @@ public class Rockets {
         this.fuel = 3500;//ton
         this.motor ="J2";
         this.numMotor = 6;
+        this.puissance = 0;
+        this.takenOff = false;
     }
 
     public Double exhaustSpeed(){
@@ -32,4 +36,24 @@ public class Rockets {
         veloEscape = Math.sqrt(veloEscape);
         return veloEscape;
     }
+//despegue
+    public void takeoff(){
+        this.puissance += puissance;
+    }
+
+    public void condition(){
+        if (puissance == 0){
+            System.out.println("La nave esta en tierra");
+            this.takenOff = false;
+        }else{
+            System.out.println("La nave esta fuera de tierra");
+            this.takenOff = true;
+        }
+    }
+
+    public Boolean takenOff(){
+        return takenOff;
+    }
+
+
 }

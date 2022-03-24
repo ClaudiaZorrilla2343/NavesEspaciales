@@ -3,31 +3,28 @@ package Package;
 import java.util.HashMap;
 
 //NOtripuladas
-public abstract class UnmannedShips extends Spaceships{
+public class UnmannedShips extends Spaceships{
 
     private String celestialBodyToStudy;//cuerpo celeste para estudiar
     private String informationSatellites;
 
     public UnmannedShips(String name, String motor, String mission) {
         super(name, motor, mission);
-        this.celestialBodyToStudy = celestialBodyToStudy;
         this.informationSatellites = informationSatellites;
     }
 
 
     @Override
     public void target() {
-        System.out.println("Abastecer, limpiar y regular periódicamente la elevación \n"
+        System.out.println("Su objetivo es abastecer, limpiar y regular periódicamente la elevación \n"
                             +"de la Estación Espacial Internacional.\n"
                             + "Estudiar otros cuerpos celestes");
     }
 
-    public void SaturnoAndLunas(){
-        System.out.println("Para estudiar este planeta debe conocer la cifra de satelites allí");
-    }
-
 
     public void setInformationSatellites(String planet) {
+
+        System.out.println("Para estudiar este planeta debe conocer la cifra de satelites allí");
 
         HashMap<String, Integer> satellites = new HashMap<>();
         satellites.put("Jupiter", 67);
@@ -41,6 +38,8 @@ public abstract class UnmannedShips extends Spaceships{
 
         informationSatellites = String.valueOf(satellites.get(planet));
         this.informationSatellites = informationSatellites;
+        System.out.println("Este planeta tiene el siguiente numero de satelites: "+informationSatellites);
+
     }
 
     public String getInformation() {

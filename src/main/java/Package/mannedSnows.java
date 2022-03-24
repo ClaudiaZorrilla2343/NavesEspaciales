@@ -13,14 +13,11 @@ public class mannedSnows extends Spaceships {
 
     @Override
     public void target() {
-        System.out.println("Mandar seres humanos para tareas de reparación, matenimiento e investigación");
+        System.out.println("Su objetivo era mandar seres humanos para tareas de reparación, matenimiento e investigación");
     }
 
-    public String getPorposeShip() {
-        return porposeShip;
-    }
 
-    public void setPorposeShip(String porposeShip) {
+    public void porposeShipp() {
 
         String porpuse [] = {"Mision Lunar","Experimentación y estudio del comportamiento humano en condiciones ingrávidas " +
                 "y en el exterior de la cápsula", "Mantenimiento de satélites, probar acoplamientos con otras naves y equipos electrónicos"};
@@ -30,4 +27,5 @@ public class mannedSnows extends Spaceships {
             this.porposeShip = porpuse[i];
         }
     }
+
 }
