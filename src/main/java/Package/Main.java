@@ -30,6 +30,8 @@ public class Main {
                             Apolo.target();
                             System.out.println("Las misiones que podría esta nave tener pueden ser: ");
                             Apolo.porposeShipp();
+                            System.out.println(Apolo.getName());
+
                             break;
                         case 2:
                             mannedSnows Vostok;

@@ -9,6 +9,7 @@ public class mannedSnows extends Spaceships {
 
     public mannedSnows(String name, String motor, String mission, int passengers) {
         super(name, motor, mission);
+        this.passengers = passengers;
     }
 
     @Override
