@@ -1,12 +1,15 @@
 package Package;
 //tripuladas
-public class mannedSnows extends Spaceships{
+public class mannedSnows extends Spaceships {
 
-    //pasajeros
-    private int passengers;
+    private int passengers;//pasajeros
 
-    protected mannedSnows(String name, String motor, String mission) {
+    public mannedSnows(String name, String motor, String mission, int passengers) {
         super(name, motor, mission);
-        this.passengers = passengers;
+    }
+
+    @Override
+    public void target() {
+        System.out.println("Mandar seres humanos para tareas de reparación, matenimiento e investigación");
     }
 }
